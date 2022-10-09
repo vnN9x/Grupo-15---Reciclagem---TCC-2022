@@ -1,9 +1,10 @@
+import React from 'react'
 import Map from './pages/map/Map';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
+  //Link
 } from "react-router-dom";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="map" element={<Map />} />
+          <Route path="/"/>
         </Routes>
       </Router>
     </>
