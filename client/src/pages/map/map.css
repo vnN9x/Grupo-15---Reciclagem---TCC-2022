@@ -1,6 +1,9 @@
+body {
+    background-color: white;
+}
+
 .Map{
     margin: auto;
     width: 60%;
     height: 600px;
-    background-color: rgb(252, 252, 252);
 }
