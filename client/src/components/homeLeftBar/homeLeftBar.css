@@ -5,12 +5,12 @@
   justify-content: center;
   align-items: center;
   overflow:hidden;
-  margin-top: 20px;
 }
 
 .image {
   width: 400px;
   height: 250px;
+  display: block;
   cursor: pointer;
   border-radius: 10px;
 }
@@ -20,7 +20,7 @@
   top: 50%;
   right: 12%;
   font-size: 20px;
-  color: rgb(255, 255, 255);
+  color: black;
   z-index: 10;
   cursor: pointer;
   user-select: none;
@@ -31,7 +31,7 @@
   top: 50%;
   left: 12%;
   font-size: 20px;
-  color: rgb(255, 255, 255);
+  color: black;
   z-index: 10;
   cursor: pointer;
   user-select: none;
@@ -48,11 +48,11 @@
   transform: scale(1.08);
 }
 
-.imageTitleRigth {
-    position: absolute;
-    background-color: rgb(218, 247, 230);
-    min-width: 400px;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    bottom: 0.5px;
+.imageTitle {
+  position: absolute;
+  background-color: rgb(243, 224, 224);
+  min-width: 400px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  bottom: 0.5px;
 }

@@ -1,6 +1,8 @@
 import React, {useRef, useLayoutEffect} from 'react'
 import { Loader } from '@googlemaps/js-api-loader';
 import './map.css'
+import TopBar from '../../components/TopBar/TopBar';
+import HomeSideBar from '../../components/homeSidebar/HomeSideBar';
 
 function displayMap(mapDiv) {
   const mapOptions = {
@@ -31,6 +33,12 @@ export default function Map() {
   });
   
   return (
-    <div className='Map' id='Map' ref={ref}></div>
+    <>
+      <TopBar/>
+      <HomeSideBar/>
+      <div className="map">
+        <div className='map-div' id='map-div' ref={ref}></div>
+      </div>
+    </>
   )
 }

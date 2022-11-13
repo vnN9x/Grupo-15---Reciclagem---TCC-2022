@@ -3,6 +3,8 @@ const app = express();
 const dotenv = require("dotenv")
 const mongoose = require("mongoose")
 const townRoute = require("./routes/town");
+const placeRoute = require("./routes/place");
+const materialRoute = require("./routes/material");
 
 dotenv.config();
 app.use(express.json());
@@ -14,6 +16,8 @@ app.use("/test", (req,res)=>{
 });
 
 app.use("/api/town", townRoute);
+app.use("/api/material", materialRoute);
+app.use("/api/place", placeRoute);
 
 app.listen("5000", () => {
     console.log("Backend funcionando")

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { rigthData } from './rigthData';
+import { leftData } from './leftData';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
-import './homeRigthBar.css'
+import './homeLeftBar.css'
 
-const HomeRigthBar = ({ slides }) => {
+const HomeLeftBar = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -23,7 +23,7 @@ const HomeRigthBar = ({ slides }) => {
     <section className='slider'>
       <FaArrowLeft className='left-arrow' onClick={prevSlide} />
       <FaArrowRight className='right-arrow' onClick={nextSlide} />
-      {rigthData.map((slide, index) => {
+      {leftData.map((slide, index) => {
         return (
           <div
             className={index === current ? 'slide active' : 'slide'}
@@ -32,7 +32,7 @@ const HomeRigthBar = ({ slides }) => {
             {index === current && (
               <a href={slide.link} target='_blank' rel="noopener noreferrer"><img src={ slide.image } title={slide.title} alt={slide.title} className='image' /></a>
             )}
-            <div className='imageTitleRigth'><p>{slide.title}</p></div>
+            <div className='imageTitle'><p>{slide.title}</p></div>
           </div>
         );
         
@@ -42,4 +42,4 @@ const HomeRigthBar = ({ slides }) => {
   );
 };
 
-export default HomeRigthBar;
+export default HomeLeftBar;

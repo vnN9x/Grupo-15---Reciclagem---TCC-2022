@@ -6,20 +6,23 @@ import {
   Route,
   //Link
 } from "react-router-dom";
-import TopBar from './components/TopBar/TopBar';
 import Home from './pages/home/Home';
-import HomeRigthBar from './components/homeRigthBar/HomeRigthBar';
-import {rigthData} from './components/homeRigthBar/rigthData';
-import Header from './components/header/Header';
-import HomeSideBar from './components/homeSidebar/HomeSideBar';
+import Materiais from './pages/materiais/Materiais';
+//import Locais from './components/locais/Locais';
+import './app.css'
+import Dados from './pages/dados/Dados';
 
 function App() {
   return (
     <>
-      <Home/>
+    {/* <Locais/> */}
       <Router>
         <Routes>
           <Route path="map" element={<Map />} />
+          <Route path="home" element={<Home />} />
+          <Route path="materiais" element={<Materiais />} />
+          <Route path="dados" element={<Dados />} />
+          <Route path="sobre" element={<Dados />} />
         </Routes>
       </Router>
     </>

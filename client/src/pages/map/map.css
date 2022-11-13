@@ -1,9 +1,8 @@
-body {
-    background-color: white;
-}
-
-.Map{
+.map-div{
     margin: auto;
     width: 60%;
-    height: 600px;
+    position: fixed;
+    height: 100%;
+    overflow-x: hidden;
+    z-index: 9;
 }
