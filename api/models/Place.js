@@ -4,7 +4,16 @@ const PlaceSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
-        unique: true
+        unique: true,
+    },
+    town: {
+        type: String,
+        required: true,
+        unique: false,
+    },
+    materials: {
+        type: Array,
+        required: true,
     },
     desc: {
         type: String,

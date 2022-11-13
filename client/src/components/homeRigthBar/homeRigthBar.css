@@ -1,0 +1,58 @@
+.slider {
+  position: relative;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+  margin-top: 20px;
+}
+
+.image {
+  width: 400px;
+  height: 250px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 12%;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+.imageTitleRigth {
+    position: absolute;
+    background-color: rgb(218, 247, 230);
+    min-width: 400px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    bottom: 0.5px;
+}

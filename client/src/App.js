@@ -6,14 +6,23 @@ import {
   Route,
   //Link
 } from "react-router-dom";
+import Home from './pages/home/Home';
+import Materiais from './pages/materiais/Materiais';
+//import Locais from './components/locais/Locais';
+import './app.css'
+import Dados from './pages/dados/Dados';
 
 function App() {
   return (
     <>
+    {/* <Locais/> */}
       <Router>
         <Routes>
           <Route path="map" element={<Map />} />
-          <Route path="/"/>
+          <Route path="home" element={<Home />} />
+          <Route path="materiais" element={<Materiais />} />
+          <Route path="dados" element={<Dados />} />
+          <Route path="sobre" element={<Dados />} />
         </Routes>
       </Router>
     </>

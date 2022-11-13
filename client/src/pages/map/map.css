@@ -1,6 +1,8 @@
-.Map{
+.map-div{
     margin: auto;
     width: 60%;
-    height: 600px;
-    background-color: rgb(252, 252, 252);
+    position: fixed;
+    height: 100%;
+    overflow-x: hidden;
+    z-index: 9;
 }
