@@ -9,8 +9,8 @@ import {
 import Home from './pages/home/Home';
 import Materiais from './pages/materiais/Materiais';
 //import Locais from './components/locais/Locais';
-import './app.css'
 import Dados from './pages/dados/Dados';
+import './app.css'
 
 function App() {
   return (
@@ -18,11 +18,11 @@ function App() {
     {/* <Locais/> */}
       <Router>
         <Routes>
-          <Route path="map" element={<Map />} />
-          <Route path="home" element={<Home />} />
-          <Route path="materiais" element={<Materiais />} />
-          <Route path="dados" element={<Dados />} />
-          <Route path="sobre" element={<Dados />} />
+          <Route path="/mapa" element={<Map />} />
+          <Route exact path="/" element={<Home />} />
+          <Route path="/materiais" element={<Materiais />} />
+          <Route path="/dados" element={<Dados />} />
+          <Route path="/sobre" element={<Dados />} />
         </Routes>
       </Router>
     </>

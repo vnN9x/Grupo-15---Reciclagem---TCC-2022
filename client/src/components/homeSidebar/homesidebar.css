@@ -1,6 +1,5 @@
 .sidebar{
     width: 50px;
-    background-color: #f1f1f1;
     z-index: 11;
     top: 0;
     left: 0;
@@ -15,7 +14,7 @@
     padding: 20px 10px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: black;
     display: block;
     transition: 0.5s;
 }

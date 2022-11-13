@@ -1,9 +1,73 @@
-.header{
-  display: flex;
-  flex-wrap: wrap;
+.header {
+  margin-top: 100px;
 }
 
-.header > div{
-  flex: 50%;
-  margin-bottom: 10px;
+.headerTitles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(1, 7, 0);
+}
+
+.headerTitleLg {
+  position: absolute;
+  top: 4%;
+  font-size: 100px;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.headerImg {
+  width: 98%;
+  height: 450px;
+  margin-top: 7px;
+  margin-left: 42px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 1px 1px 30px 1px;
+}
+
+.headerItems{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-left: 42px;
+  justify-content: center;
+  border-width: 1px solid black;
+}
+
+.badSide{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  width: 650px;
+  border: 1px solid white;
+  background-color: #FDEDEC;
+}
+.goodSide{
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
+  width: 650px;
+  border: 1px solid white;
+  background-color: #EAFAF1;
+}
+
+hr {
+  width: 1px;
+  background: black;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

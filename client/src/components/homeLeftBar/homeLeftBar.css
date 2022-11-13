@@ -50,7 +50,8 @@
 
 .imageTitle {
   position: absolute;
-  background-color: rgb(243, 224, 224);
+  background-color: red;
+  color: white;
   min-width: 400px;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
