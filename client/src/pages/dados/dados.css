@@ -1,0 +1,10 @@
+.dados {
+    display: flex;
+    margin-top: 90px;
+    margin-left: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #8FBC8B;
+    border: 1px solid black;
+}

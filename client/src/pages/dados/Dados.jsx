@@ -1,28 +1,21 @@
 import React from 'react'
 import HomeSideBar from '../../components/homeSidebar/HomeSideBar'
 import TopBar from '../../components/TopBar/TopBar'
+import './dados.css'
 
 export default function () {
   return (
     <>
         <TopBar/>
         <HomeSideBar/>
-        <div>
-            Portanto, ficou demonstrado que poderá ser usado na
-    prática do ensino dos SSVV, tornando o aprendizado mais
-    atrativo e dinâmico e os resultados sugerem que o aplicativo
-    poderá alcançar repercussão maior com a inserção de mais
-    funcionalidades, e para isto recomenda-se a validação desta
-    tecnologia junto a especialistas e estudantes/usuários.
-    Tem-se como principal limitação do estudo o fato de o
-    aplicativo digital está direcionado apenas a um ponto pertencente à área de fundamentos de enfermagem, que consiste nos sinais vitais. Para tanto, recomenda-se: a validação
-    do aplicativo por especialistas na área de enfermagem e
-    informática; validação com os acadêmicos; e, defende-se
-    a construção de materiais complementares, com vistas a
-    aprofundar o ensino de enfermagem nesta área de atuação e em outros assuntos, não somente para o ensino na
-    academia, mas para que haja extensão para os enfermeiros
-    que já estejam inseridos no serviço de saúde, com vistas a
-    aprimorar o conhecimento destes. 
+        <div className='dados'>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales bibendum nisl, eu viverra tortor vulputate ut. Aliquam gravida, risus a hendrerit dapibus, nulla elit feugiat ipsum, eu sollicitudin elit risus at leo. Ut ac ex a ipsum tincidunt aliquet non nec est. Vivamus eu metus vulputate nisl elementum ultricies. Aliquam in nisi eget nibh mollis maximus. In bibendum, diam nec vehicula elementum, ligula urna ultrices tellus, ut fermentum leo nibh a quam. Cras id sem id orci interdum tempus. In nec turpis ac libero congue vehicula. Etiam ornare vestibulum eros at vestibulum. Mauris eu cursus elit. In hac habitasse platea dictumst. Praesent vel ultricies tortor.
+
+Fusce lorem lorem, aliquam ac tortor quis, porttitor vehicula erat. Curabitur vel egestas risus, ultrices lobortis enim. Sed lobortis, odio ut convallis aliquam, est orci aliquet lectus, et sodales libero eros id libero. Praesent quis odio quis eros elementum pharetra. Etiam ut molestie libero, vel feugiat mi. Vestibulum sed malesuada tellus. Nunc et aliquet neque. Cras id lacus semper, varius arcu ac, mattis nisi. Donec nisl tortor, gravida et accumsan at, consequat at magna. Nunc blandit gravida purus et accumsan. Proin tempor ut nibh sed sollicitudin.
+
+Vivamus rutrum tellus vel dolor vulputate dapibus. Cras suscipit blandit tempor. Nulla facilisi. Sed faucibus non est at laoreet. Donec viverra lectus sed eros tempor, vitae sollicitudin lorem hendrerit. Proin mollis bibendum posuere. Vivamus bibendum dui nec nisi condimentum eleifend eget quis sapien. Sed pharetra, dui et egestas pellentesque, urna leo volutpat tortor, eget dictum magna lectus commodo mauris. Mauris mollis a dui eu cursus. Integer porttitor enim ac nunc tempor ultrices.
+
+Quisque varius purus non quam fringilla semper. Vestibulum convallis magna quis mauris luctus vehicula. Morbi at maximus lectus, a laoreet mauris. Integer semper malesuada tempus. Suspendisse potenti. Sed feugiat magna a neque porta, sed ultrices nulla accumsan. Pellentesque bibendum nulla eu magna porttitor pretium. Pellentesque feugiat vel lectus ut congue.
         </div>
     </>
   )
