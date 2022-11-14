@@ -3,6 +3,7 @@ import { Loader } from '@googlemaps/js-api-loader';
 import './map.css'
 import TopBar from '../../components/TopBar/TopBar';
 import HomeSideBar from '../../components/homeSidebar/HomeSideBar';
+import MapOptions from '../../components/mapOptions/MapOptions';
 
 function displayMap(mapDiv) {
   const mapOptions = {
@@ -15,6 +16,7 @@ function displayMap(mapDiv) {
 }
 
 var mapDiv = null;
+
 
 export default function Map() {
   const ref = useRef();
@@ -31,12 +33,13 @@ export default function Map() {
   loader.load().then(() => {
     displayMap(mapDiv);
   });
-  
+
   return (
     <>
       <TopBar/>
       <HomeSideBar/>
       <div className="map">
+        <MapOptions/>
         <div className='map-div' id='map-div' ref={ref}></div>
       </div>
     </>

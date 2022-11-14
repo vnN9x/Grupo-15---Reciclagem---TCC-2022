@@ -2,8 +2,15 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    background-color: #8FBC8B;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    margin-left: 50px;
+    border: 1px solid black;
 }
 
 .mini-slider {
@@ -14,8 +21,6 @@
 }
   
 .image-slider {
-    width: 200px;
-    height: 125px;
     display: block;
     border-radius: 10px;
 }
@@ -23,7 +28,7 @@
 .right-arrow-slider {
     position: absolute;
     top: 50%;
-    right: -20%;
+    right: -26%;
     font-size: 20px;
     color: rgb(0, 0, 0);
     z-index: 9;
@@ -34,7 +39,7 @@
 .left-arrow-slider {
     position: absolute;
     top: 50%;
-    left: -20%;
+    left: -5%;
     font-size: 20px;
     color: rgb(0, 0, 0);
     z-index: 9;
@@ -51,15 +56,18 @@
     opacity: 1;
     transition-duration: 1s;
     transform: scale(1.08);
+    max-width: 80%;
 }
   
 .texto{ 
-    margin-left: 100px;
-    width: 85%;
+    width: 100%;
+    height: 100%;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 50px;
+    border: 1px solid black;
+    background-color: whitesmoke;
     font-family: 'Times New Roman', Times, serif;
     overflow: hidden;
 }

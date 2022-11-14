@@ -1,9 +1,9 @@
 export const miniSliderData = [
     {
         image:
-            'https://cdn-icons-png.flaticon.com/512/1996/1996920.png',
+            'https://ouch-cdn2.icons8.com/WPPV7Y9t-9UVOunPw_87_YGnms54yGBWPnk_5Tnj8QM/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMTAy/Lzc4M2E3YjkwLWY0/MmMtNDAxYS1iODY5/LTA4NGMxNDg1MDYz/Ni5zdmc.png',
         title:
-            'Plástico',
+            'Plastico',
         text:
             `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non neque vel diam aliquam commodo sed vel dolor. Quisque convallis odio dapibus volutpat dignissim. Aenean vel dolor magna. Etiam lobortis odio id mauris ullamcorper, quis congue purus lacinia. Maecenas pharetra, nisl vel congue porta, dolor lorem suscipit nulla, eleifend feugiat est odio ac mi. Quisque mollis gravida elit in faucibus. Quisque vehicula sed dolor et porta. Integer volutpat, diam non rutrum porttitor, justo lacus lobortis sem, sit amet venenatis elit leo quis est. Donec tortor erat, posuere at elit ut, fermentum imperdiet neque. Sed ut nibh quam. Nam posuere felis eget finibus commodo.
 
@@ -17,33 +17,33 @@ export const miniSliderData = [
     },
     {
         image:
-            'https://classic.exame.com/wp-content/uploads/2022/05/cooperativa-reciclagem.jpg?quality=70&strip=info&w=594',
+            'https://ouch-cdn2.icons8.com/yS-9bIKj46xrR9Npi38tkTAMnSnMQVsKb9dwzTEoWm4/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNjIy/LzM5YzQzY2Y1LTM4/ZjktNDcxNy04OWFl/LWE5ZDcwNjc3NmQw/Zi5zdmc.png',
         title:
-            'Bitributação e informalidade de catadores são gargalos para reciclagem',
+            'Papel',
         text:
             'https://exame.com/bussola/bitributacao-e-informalidade-do-cidadao-sao-gargalos-para-reciclagem/'
     },
     {
         image:
-            'https://s2.glbimg.com/hgp3PrXRecjG1e0Mjloe5T7XoFs=/0x0:1871x1061/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/Y/7/6xUuuAR5yjMj458uTBdQ/imagem-aerea-incendio.jpg',
+            'https://ouch-cdn2.icons8.com/nX5CQh7uFBhfAyEJamAbx8JXLke8Y3hWGHQpesfVttI/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNzQ3/LzNlY2M0YzYzLThh/N2ItNDZkNy1hODc5/LTNlOGQ1OWI4NWFm/Mi5zdmc.png',
         title:
-            'Imagens aéreas mostram altura da fumaça causada por incêndio em depósito de reciclagem em Campinas',
+            'Vidro',
         text:
             'https://g1.globo.com/sp/campinas-regiao/noticia/2022/10/26/imagens-aereas-mostram-altura-da-fumaca-causada-por-incendio-em-deposito-de-reciclagem-em-campinas-videos.ghtml'
     },
     {
         image:
-            'https://jpimg.com.br/uploads/2017/04/2943659953-aterro-sanitario-ae.jpg',
+            'https://ouch-cdn2.icons8.com/UA5Bo4jGER4MhdutEkxR1Xr6sLS8Tpe-G1EgNBwplto/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMjQx/L2I5ZDVkZDg5LTkx/MWEtNDk3Mi05YjZh/LTRlNTM0MTA2OTZj/Yi5zdmc.png',
         title:
-            'Apenas 3% do lixo seco gerado no Brasil é reciclado',
+            'Organico',
         text:
             'https://jovempan.com.br/programas/jornal-da-manha/apenas-3-do-lixo-seco-gerado-no-brasil-e-reciclado.html'
     },
     {
         image:
-            'https://projetocolabora.com.br/wp-content/uploads/2022/05/lixo-16-scaled-e1652744286235.jpg',
+            'https://ouch-cdn2.icons8.com/O90MgYUWvkyNsDpeSqk4muKNheoh608D-WiSvTG9vCw/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvOC9k/NDBiZDRiOC1kYmJl/LTQ1ZDQtYmU0Ni0y/ZThiNzVkNjFlMjku/c3Zn.png',
         title:
-            'Mais de 16 milhões de brasileiros não têm coleta de lixo em casa',
+            'Metal',
         text:
             'https://projetocolabora.com.br/ods6/mais-de-16-milhoes-de-brasileiros-nao-tem-coleta-de-lixo-em-casa/'
     }
