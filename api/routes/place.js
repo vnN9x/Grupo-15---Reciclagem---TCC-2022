@@ -21,7 +21,7 @@ router.post("/map", async (req,res)=>{
     }
 });
 
-router.get("/map", async (req,res)=>{
+router.get("/", async (req,res)=>{
     const matName = req.query.materials;
     try{
         let places;

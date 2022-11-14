@@ -1,4 +1,6 @@
 import React from 'react'
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 import Map from './pages/map/Map';
 import {
   BrowserRouter as Router,
@@ -14,12 +16,21 @@ import './app.css'
 import Sobre from './pages/sobre/Sobre';
 
 function App() {
+  const [locations, setLocations] = useState([]);
+
+  useEffect(() =>{
+    const fetchLocations = async ()=>{
+      const res = await axios.get("/place")
+      setLocations(res.data)
+    }
+    fetchLocations()
+  }, [])
   return (
     <>
     {/* <Locais/> */}
       <Router>
         <Routes>
-          <Route path="/mapa" element={<Map />} />
+          <Route path="/mapa" element={<Map locations={locations}/>} />
           <Route exact path="/" element={<Home />} />
           <Route path="/materiais" element={<Materiais />} />
           <Route path="/dados" element={<Dados />} />

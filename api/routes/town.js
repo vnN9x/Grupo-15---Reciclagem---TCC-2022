@@ -16,7 +16,7 @@ router.post("/map", async (req,res)=>{
     }
 });
 
-router.get("/map", async (req,res)=>{
+router.get("/", async (req,res)=>{
     const townName = req.query.town;
     try{
         let towns;
