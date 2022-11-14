@@ -11,6 +11,7 @@ import Materiais from './pages/materiais/Materiais';
 //import Locais from './components/locais/Locais';
 import Dados from './pages/dados/Dados';
 import './app.css'
+import Sobre from './pages/sobre/Sobre';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="/materiais" element={<Materiais />} />
           <Route path="/dados" element={<Dados />} />
-          <Route path="/sobre" element={<Dados />} />
+          <Route path="/sobre" element={<Sobre/>} />
         </Routes>
       </Router>
     </>

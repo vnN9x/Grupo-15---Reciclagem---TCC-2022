@@ -7,9 +7,9 @@
     width: 97%;
     position: fixed;
     margin-left: 50px;
-    margin-top: 50px;
+    margin-top: 10px;
     background-color: black;
-    height: 850px;
+    height: 750px;
     overflow-x: hidden;
     z-index: 9;
 }
