@@ -1,9 +1,9 @@
 import React, {useRef, useLayoutEffect} from 'react'
 import { Loader } from '@googlemaps/js-api-loader';
 import './map.css'
-import TopBar from '../../components/TopBar/TopBar';
-import HomeSideBar from '../../components/homeSidebar/HomeSideBar';
-import MapOptions from '../../components/mapOptions/MapOptions';
+import TopBar from '../TopBar/TopBar';
+import HomeSideBar from '../homeSidebar/HomeSideBar';
+import MapOptions from '../mapOptions/MapOptions';
 
 const mapStyle = [{
   'featureType': 'administrative',
@@ -85,7 +85,7 @@ const mapStyle = [{
 let myPos;
 
 function calcCrow(lat1, lon1, lat2, lon2) {
-  var R = 6371; // km
+  var R = 6371; 
   var dLat = toRad(lat2-lat1);
   var dLon = toRad(lon2-lon1);
   var lat1B = toRad(lat1);
@@ -210,10 +210,7 @@ export default function Map({locations}) {
 
   return (
     <>
-      <TopBar/>
-      <HomeSideBar/>
       <div className="map">
-        <MapOptions/>
         <div className='map-div' id='map-div' ref={ref}></div>
       </div>
     </>
