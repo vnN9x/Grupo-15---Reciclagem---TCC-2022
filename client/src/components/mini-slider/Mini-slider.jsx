@@ -44,7 +44,7 @@ const MiniSlider = ({ slides }) => {
               key={index}
             >
               {index === current && (
-                <div className='texto'>{slide.text}</div>
+                <div className='texto'><span>{slide.text}</span></div>
               )}
             </div>
           );

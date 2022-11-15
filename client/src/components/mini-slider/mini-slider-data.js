@@ -5,15 +5,11 @@ export const miniSliderData = [
         title:
             'Plastico',
         text:
-            `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non neque vel diam aliquam commodo sed vel dolor. Quisque convallis odio dapibus volutpat dignissim. Aenean vel dolor magna. Etiam lobortis odio id mauris ullamcorper, quis congue purus lacinia. Maecenas pharetra, nisl vel congue porta, dolor lorem suscipit nulla, eleifend feugiat est odio ac mi. Quisque mollis gravida elit in faucibus. Quisque vehicula sed dolor et porta. Integer volutpat, diam non rutrum porttitor, justo lacus lobortis sem, sit amet venenatis elit leo quis est. Donec tortor erat, posuere at elit ut, fermentum imperdiet neque. Sed ut nibh quam. Nam posuere felis eget finibus commodo.
-
-            Nam mattis non felis luctus pellentesque. Maecenas sollicitudin, quam vitae posuere lacinia, risus diam euismod erat, at efficitur tortor nulla sed enim. Sed vel pharetra magna, fringilla congue ipsum. Suspendisse vitae ante eu massa porta ullamcorper. Donec a ante sed ipsum fermentum aliquet. Nullam ut porttitor urna, quis rhoncus erat. Nunc vitae diam vel elit semper consectetur. Sed in nulla ac erat feugiat hendrerit. Nunc tempus laoreet tincidunt. Etiam arcu lorem, dictum at diam vitae, faucibus convallis justo.
-            
-            Nunc eu volutpat arcu, bibendum dictum libero. Mauris in volutpat diam. Nam sit amet enim condimentum, ornare urna ut, rhoncus dolor. Pellentesque malesuada tempor semper. Vivamus sed condimentum purus. Praesent a metus justo. Morbi accumsan, quam nec interdum faucibus, tellus velit commodo ex, eget condimentum massa purus sed ex. Donec non blandit ante. Sed vehicula pellentesque arcu sagittis sagittis. Nam fringilla ut ligula in auctor.
-            
-            Nunc non faucibus elit, eu mattis magna. Mauris scelerisque faucibus urna, eu ullamcorper urna sodales et. Aenean mauris massa, luctus vestibulum leo id, finibus euismod ex. Fusce vulputate at erat ut rutrum. Proin eleifend ultrices mi malesuada iaculis. Ut malesuada bibendum tempus. Quisque ullamcorper orci at tempor sagittis. In iaculis nibh at quam venenatis, sed sagittis felis aliquet.
-            
-            Nulla porttitor et tortor quis vestibulum. Donec et ligula ex. Duis placerat posuere viverra. In blandit varius malesuada. Donec eu diam eget tellus hendrerit vehicula. Nullam ornare convallis leo at posuere. Nunc sed velit ut velit feugiat elementum. Maecenas in risus feugiat, feugiat sem nec, luctus leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla tempus maximus tellus, vitae ultricies libero lobortis non. Vestibulum mi quam, scelerisque ut sagittis quis, egestas id odio. Donec id massa mattis, facilisis neque nec, vulputate lorem.`
+            `A reciclagem do plástico é dificultada pela existência de inúmeros tipos diferentes de resinas plásticas que são incompatíveis entre si e
+            não podem ser misturadas no processo de reciclagem. Ou seja, ao separar os recicláveis plásticos, verifique atentamente qual o tipo de material dominante e
+            se há diferentes tipos de resinas, caso haja procure separar o máximo possível, para potencializar a reutilização da matéria.
+            Por esse motivo, os recicladores de plásticos utilizam-se quase que exclusivamente de matéria-prima advinda de resíduos industriais,
+            pois esse tipo de resíduo é normalmente constituído por um só tipo de resina e não apresenta sujeira ou contaminação.`
     },
     {
         image:
@@ -21,7 +17,11 @@ export const miniSliderData = [
         title:
             'Papel',
         text:
-            'https://exame.com/bussola/bitributacao-e-informalidade-do-cidadao-sao-gargalos-para-reciclagem/'
+        `O papel, apesar de parecer simples, também é provido de metodos especiais de reciclagem, como:
+        \n1. Não jogue as embalagens em cestos com restos de outros resíduos, como óleo, comida e produtos químicos que podem contaminá-lo.
+        \n2. Papéis sujos (contaminados) devem ser descartados no lixo orgânico.
+        \n3. Armazene em local seco.
+        \n4. Se possível, separe por tipo de papel, como embalagens, papel de escritório, revistas, jornais, papelão, entre outros.`
     },
     {
         image:
@@ -29,7 +29,9 @@ export const miniSliderData = [
         title:
             'Vidro',
         text:
-            'https://g1.globo.com/sp/campinas-regiao/noticia/2022/10/26/imagens-aereas-mostram-altura-da-fumaca-causada-por-incendio-em-deposito-de-reciclagem-em-campinas-videos.ghtml'
+            `Os vidros não são biodegradáveis e permanecem na natureza por cerca de dez mil anos. Por isso, o descarte desses materiais
+            em locais inapropriados pode ser muito prejudicial ao meio ambiente.Dessa maneira, o melhor a se fazer é reciclar os materiais feitos em vidro.
+            Veja algumas das vantagens na reciclagem do vidro: Diminuição do volume de lixo nos aterros; Reaproveitamento do vidro em 100%.`
     },
     {
         image:
@@ -37,7 +39,10 @@ export const miniSliderData = [
         title:
             'Organico',
         text:
-            'https://jovempan.com.br/programas/jornal-da-manha/apenas-3-do-lixo-seco-gerado-no-brasil-e-reciclado.html'
+            `A reciclagem de lixos orgânicos não é muito comum, mas também há sua utilidade, para efetuar a separação desse material de boa maneira existem duas opções,
+            que são as mais comuns para quem não quer simplesmente jogar o lixo orgânico fora:
+            \n1. instalar um triturador de pia em sua cozinha e colocar os detritos em uma sacola separada, fazendo evitando o acúmulo de água de forma a deixar o lixo mais leve.
+            \n2. realizar a compostagem doméstica, que é prática e pode ser feita em qualquer tipo de residência.`
     },
     {
         image:
@@ -45,6 +50,7 @@ export const miniSliderData = [
         title:
             'Metal',
         text:
-            'https://projetocolabora.com.br/ods6/mais-de-16-milhoes-de-brasileiros-nao-tem-coleta-de-lixo-em-casa/'
+            `O metal é um produto muito utilizado em nosso dia a dia. Podemos encontra-lo em embalagens, fios, panelas, talheres, latas e diversos outros itens.
+            Mas apenas alguns tipos de metais são recicláveis, sendo eles:- Latas de alumínio (refrigerante, cerveja, etc) e aço latas de sardinha, molhos, óleo e etc.`
     }
 ];
