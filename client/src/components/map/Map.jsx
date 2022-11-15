@@ -135,13 +135,36 @@ function displayMap(mapDiv, locations) {
   let present;
 
   if (myPos){
-    const marker = new window.google.maps.Marker({
+    let myMarker = new window.google.maps.Marker({
       position: new window.google.maps.LatLng(myPos.lat, myPos.long),
       icon: {
         url: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
       },
       map: map,
-      title: "Minha localização!",
+      title: "Minha Localização!",
+    });
+
+    let myContentString =
+    '<div id="content">' +
+    '<div id="siteNotice">' +
+    "</div>" +
+    '<h1 id="firstHeading" class="firstHeading">Minha Localização!</h1>' +
+    '<div id="bodyContent">' +
+    "<p>O marcador azul representa <b>minha</b> localização no mapa de acordo com os dados fornecidos pelo navegador e a Google.</p><br><br>" +
+    "</div>" +
+    "</div>";
+
+    let infowindow = new window.google.maps.InfoWindow({
+      content: myContentString,
+      maxWidth: 400,
+      ariaLabel: "Minha Localização",
+    });
+
+    myMarker.addListener("click", () => {
+      infowindow.open({
+        anchor: myMarker,
+        map,
+      });
     });
 
     for(var local of locations){
@@ -155,25 +178,54 @@ function displayMap(mapDiv, locations) {
     for(var local of locations){
       features.push({position: new window.google.maps.LatLng(parseFloat(local.lat), parseFloat(local.long)),
                     title: local.name,
-                    distance: aux.lat == parseFloat(local.lat) && aux.long == parseFloat(local.long) ? 'closest' : ''})
+                    distance: aux.lat == parseFloat(local.lat) && aux.long == parseFloat(local.long) ? 'closest' : '',
+                    desc: local.desc,
+                    town: local.town})
     }
 
   } else {
     for(var local of locations){
       features.push({position: new window.google.maps.LatLng(parseFloat(local.lat), parseFloat(local.long)),
                     title: local.name,
-                    distance: aux.lat == parseFloat(local.lat) && aux.long == parseFloat(local.long) ? 'closest' : ''})
+                    distance: aux.lat == parseFloat(local.lat) && aux.long == parseFloat(local.long) ? 'closest' : '',
+                    desc: local.desc,
+                    town: local.town})
     }
   }
 
   for (let i = 0; i < features.length; i++) {
-    const marker = new window.google.maps.Marker({
+    let marker = new window.google.maps.Marker({
       position: features[i].position,
       map: map,
       icon: {
         url: features[i].distance == 'closest' ? 'http://maps.google.com/mapfiles/ms/icons/green-dot.png' : 'http://maps.google.com/mapfiles/ms/icons/red-dot.png',
       },
       title: features[i].title, 
+    });
+
+    let contentString =
+    '<div id="content">' +
+    '<div id="siteNotice">' +
+    "</div>" +
+    '<h1 id="firstHeading" class="firstHeading">'+features[i].title+'</h1>' +
+    '<div id="bodyContent">' +
+    "<p><b>"+features[i].title+"</b><br><br>" +
+    features[i].desc+"<br><br>" +
+    "Cidade: <b>"+features[i].town+"</b></p>" +
+    "</div>" +
+    "</div>";
+
+    let infowindow = new window.google.maps.InfoWindow({
+      content: contentString,
+      maxWidth: 400,
+      ariaLabel: features[i].title,
+    });
+
+    marker.addListener("click", () => {
+      infowindow.open({
+        anchor: marker,
+        map,
+      });
     });
   }
 
