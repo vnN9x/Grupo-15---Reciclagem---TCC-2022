@@ -15,10 +15,10 @@ app.use("/test", (req,res)=>{
     console.log("teste ok!")
 });
 
-app.use("/api/town", townRoute);
-app.use("/api/material", materialRoute);
-app.use("/api/place", placeRoute);
+app.use("/town", townRoute);
+app.use("/material", materialRoute);
+app.use("/place", placeRoute);
 
-app.listen("5000", () => {
+app.listen(process.env.PORT || "5000", () => {
     console.log("Backend funcionando")
 });

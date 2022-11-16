@@ -1,9 +1,8 @@
 import React, {useRef, useLayoutEffect} from 'react'
 import { Loader } from '@googlemaps/js-api-loader';
 import './map.css'
-import TopBar from '../TopBar/TopBar';
-import HomeSideBar from '../homeSidebar/HomeSideBar';
-import MapOptions from '../mapOptions/MapOptions';
+const dotenv = require("dotenv")
+dotenv.config()
 
 const mapStyle = [{
   'featureType': 'administrative',
@@ -89,7 +88,7 @@ function calcCrow(lat1, lon1, lat2, lon2) {
   var dLat = toRad(lat2-lat1);
   var dLon = toRad(lon2-lon1);
   var lat1B = toRad(lat1);
-  var lat2 = toRad(lat2);
+  lat2 = toRad(lat2);
 
   var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
     Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1B) * Math.cos(lat2); 
@@ -105,7 +104,7 @@ function toRad(Value) {
 function displayMap(mapDiv, locations) {
   let pos, infoWindow;
 
-  infoWindow = new window.google.maps.InfoWindow;
+  infoWindow = new window.google.maps.InfoWindow();
 
   const mapOptions = {
     center: { lat: -22.9064, lng: -47.0616},
@@ -175,7 +174,7 @@ function displayMap(mapDiv, locations) {
       }
     }
 
-    for(var local of locations){
+    for(local of locations){
       features.push({position: new window.google.maps.LatLng(parseFloat(local.lat), parseFloat(local.long)),
                     title: local.name,
                     distance: aux.lat == parseFloat(local.lat) && aux.long == parseFloat(local.long) ? 'closest' : '',
@@ -233,13 +232,11 @@ function displayMap(mapDiv, locations) {
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, map, pos) {
-  let currentInfoWindow;
   infoWindow.setPosition(pos);
   infoWindow.setContent(browserHasGeolocation ?
   'Geolocation permissions denied. Using default location.' :
   'Error: Your browser doesn\'t support geolocation.');
   infoWindow.open(map);
-  currentInfoWindow = infoWindow;
 }
 
 let mapDiv = null;
@@ -252,7 +249,7 @@ export default function Map({locations}) {
   })
 
   const apiOptions = {
-    apiKey: "AIzaSyACrksKJj2P6sO8NZ2eNBP7F-bBGwGRk0c"
+    apiKey: process.env.REACT_APP_GOOGLE_API
   }
   const loader = new Loader(apiOptions);
 
